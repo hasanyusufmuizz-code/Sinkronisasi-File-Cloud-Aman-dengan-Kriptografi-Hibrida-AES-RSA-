@@ -106,32 +106,7 @@ FINAL.docx	350 KB	32.4	18.2	352 KB
  Validasi Integritas File
 Integritas file diuji dengan membandingkan SHA-256 hash antara file asli dan file hasil dekripsi.
 
-text
-Salin kode
-Original File SHA-256 : dd7c38b28476e92ad6e75ad24a964bcb80688388c9c333a9c114d41d433f7f24
-Decrypted File SHA-256: dd7c38b28476e92ad6e75ad24a964bcb80688388c9c333a9c114d41d433f7f24
- Hash identik → integritas data terjaga
 
- Struktur Proyek
-pgsql
-Salin kode
-secure-file-sync/
- ├─ src/
- │   ├─ controllers/
- │   ├─ routes/
- │   ├─ models/
- │   └─ server.js
- ├─ storage/
- │   ├─ encrypted/
- │   └─ ciphertext/
- ├─ docs/
- │   ├─ screenshots/
- │   ├─ flowchart.png
- │   └─ performance_table.png
- ├─ .env.example
- ├─ package.json
- ├─ README.md
- └─ .gitignore
 ** Tech Stack**
 Node.js (Express)
 
