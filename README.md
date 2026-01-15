@@ -89,7 +89,9 @@ Endpoint `/encrypt-hybrid` digunakan untuk menguji **overhead dan performa kript
   "rsa_time_ms": 18.001,
   "rsa_wrapped_key_size_bytes": 256
 }
-  Observasi:
+````
+
+**Observasi:**
 
 AES menangani beban utama enkripsi data
 
