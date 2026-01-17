@@ -4,9 +4,7 @@ const File = require('../models/File');
 const { encryptAES, decryptAES } = require('../utils/aes');
 const { sha256 } = require('../utils/hash');
 
-/* =======================
-   UPLOAD FILE (VERSION 1)
-   ======================= */
+
 exports.uploadFile = async (req, res) => {
   const tStart = process.hrtime();
   try {
@@ -82,9 +80,7 @@ exports.uploadFile = async (req, res) => {
   }
 };
 
-/* =======================
-   DOWNLOAD FILE (DECRYPT)
-   ======================= */
+
 exports.downloadFile = async (req, res) => {
   const tStart = process.hrtime();
   try {
@@ -147,9 +143,6 @@ exports.downloadFile = async (req, res) => {
   }
 };
 
-/* =======================
-   UPDATE FILE (NEW VERSION)
-   ======================= */
 exports.updateFile = async (req, res) => {
   const tStart = process.hrtime();
   try {
@@ -233,9 +226,6 @@ exports.updateFile = async (req, res) => {
   }
 };
 
-/* =======================
-   GET FILE VERSIONS
-   ======================= */
 exports.getVersions = async (req, res) => {
   try {
     const file = await File.findById(req.params.fileId);
@@ -259,3 +249,4 @@ exports.getVersions = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
