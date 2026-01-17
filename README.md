@@ -108,10 +108,9 @@ Integritas file diuji dengan membandingkan SHA-256 hash antara file asli dan fil
 
 
 ** Tech Stack**
+
 Node.js (Express)
-
 MongoDB (Mongoose)
-
 AES-256-GCM
 
 RSA-2048 (OAEP SHA-256)
