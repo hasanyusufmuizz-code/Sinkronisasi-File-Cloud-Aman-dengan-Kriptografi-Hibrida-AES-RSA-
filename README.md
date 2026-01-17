@@ -91,30 +91,4 @@ Integritas file diuji dengan membandingkan **SHA-256 hash** antara:
 
 ---
 
-## Cara Menjalankan Proyek
-
-### 1️. Clone Repository
-```bash
-git clone https://github.com/username/secure-file-sync.git
-cd secure-file-sync
-
-2️. Install Dependency
-```bash
-npm install
-
-3️. Konfigurasi Environment
-Buat file .env:
-```bash
-env
-PORT=3000
-MONGO_URI=mongodb://127.0.0.1:27017/secure-file-sync
-
-4️. Jalankan Server
-```bash
-node src/server.js
-
-Server akan berjalan di:
-arduino
-```bash
-http://localhost:3000
 
